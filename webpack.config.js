@@ -34,6 +34,7 @@ Encore
     .addStyleEntry('css/custom-css', './assets/css/custom.css')
     .addStyleEntry('css/default-template-style', './assets/css/default-template-style.css')
     .addStyleEntry('css/style', './assets/css/style.css')
+    .addStyleEntry('css/slider', './assets/css/slider.css')
 
 
     .addPlugin(new CopyWebpackPlugin([

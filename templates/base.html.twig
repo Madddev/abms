@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>{% block title %}{% endblock %} - ABMSs</title>
+    <title>{% block title %}{% endblock %} - ABMS</title>
     {% block stylesheets %}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +36,7 @@
 
         <!-- Custom CSS -->
         <link href="{{ asset('build/css/custom-css.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/css/slider.css') }}" rel="stylesheet">
 
         <!-- Master Slider Skin -->
         <link href="{{ asset('build/vendor/masterslider/skins/default/style.css') }}" rel="stylesheet" type="text/css" />
@@ -63,7 +64,6 @@
 
 
                 {% block javascripts %}
-        <script src="{{ asset('build/app.js') }}"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="{{ asset('build/js/ie10-viewport-bug-workaround.js') }}"></script>
         <!-- jQuery -->
@@ -86,6 +86,7 @@
         <script src="{{ asset('build/vendor/owlcarousel/dist/owl.carousel.min.js') }}"></script>
         <!-- template JavaScript -->
         <script src="{{ asset('build/js/template.js') }}"></script>
+                    <script src="{{ asset('build/app.js') }}"></script>
 
     {% endblock %}
 
