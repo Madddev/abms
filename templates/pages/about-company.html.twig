@@ -34,7 +34,7 @@
                             <i class="fa fa-building-o"></i>
                         </div>
                         <a href="#" target="_blank">
-                            <h3>Livraison</h3>
+                            <h3>Décoration</h3>
                         </a>
                     </div>
                 </div>
@@ -51,26 +51,26 @@
                     </div>
 
                     <div class="quote-form clearfix"><!-- contact form -->
-                        <form class="" action="getaquote.php" id="quote" name="quote" method="post" >
+                        <form class="" action="{{ path('mailer') }}" id="quote" name="quote" method="post" >
                             <div class="form-group col-md-12">
                                 <label for="exampleInputEmail1">Nom</label>
-                                <input type="text" class="form-control" name="WriteName" id="WriteName" required >
+                                <input type="text" class="form-control" name="name" id="WriteName" required >
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="exampleInputEmail1">E-mail</label>
-                                <input type="email" class="form-control" name="WriteEmail" id="WriteEmail" required >
+                                <input type="email" class="form-control" name="email" id="WriteEmail" required >
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="exampleInputEmail1">Téléphone</label>
-                                <input type="tel" class="form-control" name="WritePhone" id="WritePhone" required >
+                                <input type="tel" class="form-control" name="phone" id="WritePhone" required >
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="exampleInputEmail1">Adresse</label>
-                                <input type="tel" class="form-control" name="WriteAdd" id="WriteAdd" required >
+                                <input type="tel" class="form-control" name="adresse" id="WriteAdd" required >
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="exampleInputEmail1">A propos de votre projet</label>
-                                <textarea class="form-control" name="WritetMessage" id="WriteMessage" rows="4" required  ></textarea>
+                                <textarea class="form-control" name="message" id="WriteMessage" rows="4" required  ></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <button name="submit" type="submit" class="btn btn-black">Envoyer</button>

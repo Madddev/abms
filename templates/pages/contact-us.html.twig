@@ -11,15 +11,15 @@
                             Nous sommes impatients de discuter de vos projets et de répondre à vos questions. Entrez vos coordonnées et nous reviendrons vers vous bientôt.</p>
                     </div>
                     <div class="contact-form clearfix"><!-- contact form -->
-                        <form class="" action="send_email.php" id="contactform" name="contact" method="post">
+                        <form class="" action="{{ path('mailer') }}" id="contactform" name="contact" method="post">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your Name" required="">
+                                <input type="text" class="form-control" name="name" id="InputName" placeholder="Your Name" required="">
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control" name="InputEmail" id="InputEmail" placeholder="Your Email" required="">
+                                <input type="email" class="form-control" name="email" id="InputEmail" placeholder="Your Email" required="">
                             </div>
                             <div class="form-group col-md-12">
-                                <textarea class="form-control" name="InputMessage" id="InputMessage" rows="4" placeholder="Message" required></textarea>
+                                <textarea class="form-control" name="message" id="InputMessage" rows="4" placeholder="Message" required></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <button name="submit" type="submit" class="btn btn-outline">Envoyer</button>
@@ -33,7 +33,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387139.81490469415!2d-74.47104962222141!3d40.70635204895516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1497339147332" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.110613204166!2d2.342321151727062!3d48.91328477919126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66eeba45ab6c9%3A0x965f86a9dae4813d!2s9+Avenue+Michelet%2C+93400+Saint-Ouen!5e0!3m2!1sfr!2sfr!4v1548345025698" allowfullscreen></iframe>
             </div>
         </div>
     </div>
