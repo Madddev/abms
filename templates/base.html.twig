@@ -37,6 +37,7 @@
         <!-- Custom CSS -->
         <link href="{{ asset('build/css/custom-css.css') }}" rel="stylesheet">
         <link href="{{ asset('build/css/slider.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/vendor/prettyPhoto/css/prettyPhoto.css') }}" rel="stylesheet">
 
         <!-- Master Slider Skin -->
         <link href="{{ asset('build/vendor/masterslider/skins/default/style.css') }}" rel="stylesheet" type="text/css" />
@@ -45,15 +46,14 @@
         <link href="{{ asset('build/vendor/masterslider/style/ms-fullscreen.css') }}" rel="stylesheet" type="text/css" />
 
         <!-- owl Slider Style -->
-        <link rel="stylesheet" href="{{ asset('build/vendor/owlcarousel/dist/assets/owl.carousel.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('build/vendor/owlcarousel/dist/assets/owl.theme.default.min.css') }}">
+
+
 
     {% endblock %}
 </head>
 
 <body id="home">
 {% include 'default/header.html.twig' %}
-{% include 'pages/slider.html.twig' %}
 
                 {% block body %}
 

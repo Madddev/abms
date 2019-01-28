@@ -16,6 +16,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "carousel": "0.0.3",
         "jquery": "^1.12.4",
         "popper.js": "^1.14.6"
     }

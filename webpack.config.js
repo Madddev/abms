@@ -58,9 +58,6 @@ Encore
     // allow legacy applications to use $/jQuery as a global variable
     .autoProvideVariables({
         $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        'Popper': 'popper.js'
     })
 
     // enables Sass/SCSS support

@@ -359,6 +359,10 @@ p {
 }
 .breng{
 	color: #ebebeb;
+    font-size: large;
+}
+p{
+    font-size: large;
 }
 .gray{
 	color:#898989;

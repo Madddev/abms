@@ -3,7 +3,10 @@
 {% block title %}Accueil {% endblock %}
 
 {% block body %}
+    <br><br>
     <div class="container" style="text-align: center; box-shadow: #f0f0f0">
+        <img src="{{ asset('build/images/brand/confirmation.jpg') }}" class="img-responsive" style="text-align: center; margin-left: auto;margin-right: auto" alt="Cinque Terre" width="304" height="236">
+        <br>
         {# Read and display every flash message available. #}
         {% for label, messages in app.flashes %}
             {% for message in messages %}
@@ -12,9 +15,10 @@
                 </div>
             {% endfor %}
         {% endfor %}
-        <button href="{{ path('default') }}" class="button btn btn-primary">Retour à la page d'accueil</button>
+        <a href="{{ path('default') }}"><button  class="button btn btn-primary">Retour à la page d'accueil</button></a>
     </div>
-
+    <br>
+    <br>
 
 
 {% endblock %}

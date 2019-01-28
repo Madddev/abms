@@ -7,23 +7,19 @@
 
 //require('../css/app.scss');
 
-window.$ = window.jQuery = require('jquery');
-require('bootstrap');
-
 jQuery(function ($) {
+
     "use strict";
- 	$(window).load(function () {
+    $(window).load(function () {
         // Animate loader off screen
         $(".loader").fadeOut("slow");
     });
-	
-	
-// Masterslider 
+// Masterslider
 	var slider = new MasterSlider();
-	 
-		slider.control('arrows' ,{insertTo:'#masterslider'});  
-		slider.control('bullets'); 
-	 
+
+	slider.control('arrows' ,{insertTo:'#masterslider'});
+
+    slider.control('bullets');
 		slider.setup('masterslider' , {
 			width:1024,
 			height:610,
@@ -32,10 +28,11 @@ jQuery(function ($) {
 			layout:'fullwidth',
 			speed:20,
 			autoplay:true
-		});	
-	
-// client slider
+		});
+
     $(document).ready(function () {
+
+// client slider
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 15,
